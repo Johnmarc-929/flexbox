@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Flexbox 1
+        </title>
+        <style>
+            body{
+                background-color: #eeeeee;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+            }
+            .wrapper{
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .container{
+                display: flex; 
+                background-color: #fff;
+                flex-wrap: wrap;
+                flex-flow: column; /* using the flex-flow property that uses values like row, row-reverse, column and column-reverse. */
+                justify-content: flex-start;
+                height: 400px;
+            }
+            .box{
+                height: 100px;
+                width: 100px;
+            }
+            .one{
+                background-color: red;
+            }
+            .two{
+                background-color: blue;
+            }
+            .three{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="box one">1</div>
+                <div class="box two">2</div>
+                <div class="box three">3</div>
+            </div>
+        </div>
+    </body>
+</html>

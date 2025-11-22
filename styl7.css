@@ -1,0 +1,35 @@
+body{
+    font-family: verdana;
+    margin: 0px;
+    background-color:#eee;
+}
+.wrap{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+ul{
+    background-color: #333;
+    list-style-type: none;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+a:hover{
+    background-color: #555;
+}
+
+@media (min-width: 600px){
+    ul{
+        display: flex;
+        /*justify-content: flex-end;*/
+    }
+    li{
+        flex: 1 1 0;
+    }
+}

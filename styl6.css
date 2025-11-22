@@ -1,0 +1,44 @@
+body{
+    background-color: #eeeeee;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* adding the flex-wrap property that allows us to make a responsive website with change in 
+the size of the website window*/
+.container{
+    display: flex; 
+    background-color: #fff;
+    flex-wrap: wrap; /* you can use (flex-wrap: wrap-reverse;) and this will reverse the way they elements wrap */
+}
+/* flex-grow used to resize the elements*/
+.box{
+    height: 100px;
+    min-width: 300px;
+    flex-grow: 1;
+    /* flex-basis: 300px; this works like the (min-width) property there is a short-hand
+    property called "flex" and it combines the (flex-grow, flex-shrink, and flex-basis) 
+    in that same order. here is how to declare it (flex: 1 0 300px;)*/
+}
+.one{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.two{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+.three{
+    background-color: green;
+    width: 100px;
+    height: 100px; 
+}
+/* the flex-grow property allows you to change the size of the elements and is useful incase 
+you are to use columns, e.g in the last one,".three" it will be sized to fit three columns */
