@@ -1,0 +1,51 @@
+<!DOCTYPE html!>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Grids in CSS One
+        </title>
+        <style>
+            body{
+                background-color: rgb(230, 232, 233);
+                font-family: cambria;
+                text-align:center;
+            }
+            .content{
+                display:grid;
+            grid-template-columns: repeat(3, 1fr); /* more like a short-hand rule*/
+            /* setting the height of the rows can be done in different ways.*/
+            /*grid-auto-rows: minmax(200px, auto);
+            grid-auto-rows: 200px 300px 400px;  here is the short hand method below*/
+            grid-template-rows: repeat(3, minmax(200px, auto));/* you can set the number of rows fromm 3 to 10 or more and it will space for the ten rows*/
+                margin: 0 auto;
+                max-width: 980px;
+                /*setting the gap between columns and rows. these are the long-hand format
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;*/
+                grid-gap: 10px;/*short- hand rule*/
+            }
+            .content div{
+                background-color: #3bbced;
+                padding: 30px;
+            }
+            .content div:nth-child(even){
+                background-color: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div>1</div>
+            <div>2</div>
+            <div><h3>3</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error impedit cupiditate nulla autem corrupti rerum sint quo, architecto aspernatur, exercitationem eligendi dignissimos quaerat reprehenderit omnis temporibus voluptatum dicta, facilis natus.</p></div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </body>
+</html>
