@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Styling a login form</title>
+        <link rel="stylesheet" href="Shtml.css"/>
+    </head>
+    <body>
+        <header>Web Development</header>
+        <form>
+            <!--Gender-->
+            <p>Choose your gender;</p>
+            <input type="radio" id="Male" name="gender"/>
+            <label for="Male">Male</label></br>
+            <input type="radio" id="Female" name="gender"/>
+            <label for="Female">Female</label>
+            <!--Interests-->
+            <p>What are you interested in?</p>
+            <input type="checkbox" id="web"/>
+            <label for="web">Web Development</label></br>
+            <input type="checkbox" id="photoshop"/>
+            <label for="photoshop">Photoshop</label></br>
+            <input type="checkbox" id="madona"/>
+            <label for="madona">Singing Madona songs</label></br>
+            <input type="checkbox" id="canvas"/>
+            <label for="canvas">Designing using Canvas</label>
+            <!--Credentials-->
+            <fieldset>
+                <legend>Contact us</legend>
+                <input type="email" placeholder="Email" required="required"/>
+                <span class="tick"></span>
+                <input type="telephone" placeholder="Contact" required="required"/>
+                <span class="tick"></span>
+            </fieldset>
+            <!--How to contact the user-->
+            <select>
+                <option>By Email</option>
+                <option>By Telephone</option>
+            </select>
+            <input type="submit" value="Become a Web Developer"/>
+        </form>
+    </body>
+</html>
